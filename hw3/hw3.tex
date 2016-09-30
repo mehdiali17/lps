@@ -1,0 +1,264 @@
+\documentclass{article}
+
+\usepackage{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\title{CORE111 Logical Problem Solving\\Homework 3}
+\author{Mir Mehdi Ali Baqri}
+
+\begin{document}
+\maketitle
+
+\section{Proofs}
+
+(a) \textbf{Premise:} \\
+\begin{enumerate}
+   
+    \item $P \rightarrow  \neg M$ 
+    \item $\neg M \rightarrow \neg C$ 
+    \item $\neg C \rightarrow \neg L$ 
+    \item $\neg P \rightarrow \neg E$ 
+    \item $\neg E \rightarrow \neg C$ 
+    \item $P \vee \neg P$ 
+    \end{enumerate}
+
+\textbf{Conclusion:}
+$ \neg L $ \\ 
+\\
+\textbf{Proof:} \\
+By applying Hypothetical syllogism on (3) and (5) we get: \\
+$\neg E \rightarrow \neg L       - 7 \\$
+\\
+Now by applying Hypothetical syllogism on (4) and (7) we get: \\ 
+$\neg P \rightarrow \neg L      - 8 \\$
+\\
+Now using 8 and 6 we get (Modus Ponens): \\
+$\neg P \rightarrow \neg L \\ $
+$\neg P $ \\
+$ \noindent\rule{1.9cm}{0.4pt}\\ $
+$\neg L  \\ $
+\\
+Now by applying Hypothetical syllogism on (1) and (2) we get: \\
+$ P \rightarrow \neg C - 9 \\ $
+\\
+By using hypothetical syllogism on (9) and (3): \\
+$ P \rightarrow \neg L $ - 10 \\
+\\
+Now by using (10) and (6) \\
+$ P \rightarrow \neg L $ \\
+$P \vee \neg P$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ \neg L$ \\
+\\
+(b) \textbf{Premise:} 
+\begin{enumerate}
+    \item $\neg C \rightarrow C \vee (J \rightarrow D)$
+    \item $C \rightarrow (C \wedge U)$
+    \item $ \neg (C \wedge U)$
+    \item $\neg D$ \\
+    \end{enumerate}
+\textbf{Conclusion:}
+$ \neg J $ \\
+\\
+Applying Modus Tollens on (2) and (3) we get: \\
+$ \neg C $ - 5 \\
+\\
+Now applying Modus ponens on (5) and (1) we get: \\
+$\neg C \rightarrow C \vee (J \rightarrow D)$ \\
+$ \neg C $ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ C \vee (J \rightarrow D)$ - 6 \\
+\\
+Finally, by using (6) , (5) and (4) we can condlude: \\
+$ C \vee (J \rightarrow D)$ \\
+$ \neg C $ \\
+$\neg D$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ \neg J $ \\
+\\
+(c)  \textbf{Premise:} 
+\begin{enumerate}
+    \item $ M \vee P $
+    \item $(P \vee S) \rightarrow (R \wedge D) $
+    \item $\neg M $
+\end{enumerate} 
+
+\textbf{Conclusion:}
+$ R $ \\
+\\
+By applying disjunctive syllogism on (1) and (3) : \\
+$ M \vee P $ \\
+$\neg M $ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ P $ - 4 \\
+\\
+By using (4) and (2) we can conclude that:
+$(P \vee S) \rightarrow (R \wedge D) $ \\
+$ P $ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ (R \wedge D) $ - 5 \\
+\\
+Now by Simplification of (5) we get:
+$ (R \wedge D) $ - 5 \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ R $ \\
+\\
+(d) \textbf{Premises:}
+ \begin{enumerate}
+    \item $\neg E \vee (B \wedge P)$
+    \item $ \neg E \vee (G \wedge W)$
+    \item $\neg P \vee \neg W$ 
+    \end{enumerate}
+\textbf{Conclusion:}
+$\neg E $ \\
+\\
+By applying resolution on (3) and (2) we get: \\
+$\neg P \vee \neg W$ \\
+$\neg E \vee (G \wedge W)$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+ $ \neg P \wedge \neg E $ - 4 \\
+ \\
+ By applying resolution again on (4) and (1) we get: \\
+ $ \neg P \wedge \neg E $ \\
+ $\neg E \vee (B \wedge P)$ \\
+ \noindent\rule{1.9cm}{0.4pt}\\
+ $\neg E $\\
+\\
+
+(e) \textbf{Premise:} \\
+\begin{enumerate}
+    \item $G \rightarrow A$
+    \item $G \rightarrow L$
+    \end{enumerate}
+\textbf{Conclusion:} 
+$G \rightarrow (A \wedge L)$ \\
+\\
+Changing implication into OR : \\
+\begin{enumerate}
+    \item $\neg G \vee A$
+    \item $\neg G \vee L$
+    \end{enumerate}
+We can also write the premise together as: 
+ $(\neg G \vee A) \wedge (\neg G \vee L)$\\
+ \\
+ Taking $ \neg G $ common : \\
+ $ \neg G \vee (A \wedge L)$\\
+ \\
+ This can also be written as : \\
+ $G \rightarrow (A \wedge L)$ \\
+ \\
+(f) \textbf{Premise:} \\
+\begin{enumerate}
+    \item $H \rightarrow D$
+    \item $U \rightarrow S$
+    \end{enumerate}
+    \textbf{Conclusion:}
+    $(H \wedge U) \rightarrow (S \wedge D)$ \\
+By using (1) and ACP :\\
+ $H \rightarrow D$ \\
+ $H$ \\
+ \noindent\rule{1.9cm}{0.4pt}\\
+ $ D $ \\
+ \\
+ By using (2) and ACP: \\
+ $U \rightarrow S$ \\
+ $U$ \\
+ \noindent\rule{1.9cm}{0.4pt}\\
+ $S$ \\
+ \\
+ Now assuming "H" and "U" to be true we can say that the required conclusion i.e. $(H \wedge U) \rightarrow (S \wedge D)$ is true.
+ 
+
+(g) \textbf{Premise:} \\
+\begin{enumerate}
+\item $(Z \rightarrow C) \rightarrow B$
+\item $(V \rightarrow Z) \rightarrow B$
+\end{enumerate}
+
+\textbf{Conclusion:} 
+$B$ \\
+\\
+Changing the implication of (1) into OR : \\
+$\neg(\neg Z \vee C) \vee B$ \\
+\\
+By De Morgan's theorem : \\
+$(\neg \neg Z \wedge C)  \vee B$ \\
+\\
+This is equal to: \\
+$Z \vee B$ - 3\\
+\\
+Now, changing the implication of (2) into OR : \\
+$\neg (\neg V \vee Z) \vee B$\\
+\\
+By De Morgan's theorem : \\
+$ (\neg \neg V \wedge Z) \vee B$\\
+\\
+This is equal to:
+$ \neg Z \vee B$ - 4\\
+\\
+By using (3) and (4) :\\
+$Z \vee B$ \\
+$ \neg Z \vee B$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ B $
+
+
+
+\section{More Proofs}
+
+(a) \textbf{Premise:} \\
+\begin{enumerate}
+    \item $S \rightarrow V $\\
+    \end{enumerate} 
+\textbf{Conclusion:}
+$ \neg V \rightarrow \neg S $ \\
+\\
+The conclusion can be achieved if we see the contra-positive of the premise i.e : \\
+$ \neg V \rightarrow \neg S $ \\
+\\
+(b)\textbf{Premise:}
+\begin{enumerate} 
+\item $(\neg S \wedge V) \rightarrow \neg P$
+\item $P$
+\item $V$
+\end{enumerate}
+\textbf{Conclusion:}
+$ S $ \\
+\\
+By applying Modus Tollens on the contra-positive of (1) and on (2) we get: \\
+$ P \rightarrow \neg (\neg S \wedge V) $ \\
+$ P $ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$\neg (\neg S \wedge V) $ - 4 \\
+\\
+By De Morgan's theorem (4) is equal to : \\
+$ S \vee \neg V $ \\
+\\
+Now by using (4) and (3) : \\
+$ S \vee \neg V $ \\
+$V$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$ S $ \\
+\\
+(c) \textbf{Premise:}
+\begin{enumerate}
+\item $\neg S \rightarrow (\neg P \vee \neg V)$
+\item $P \wedge V$
+\end{enumerate}
+\textbf{Conclusion:}
+$ S $ \\
+\\
+By De Morgan's Theorem (1) can be written as: \\
+$\neg S \rightarrow \neg ( P \wedge  V)$ \\
+\\
+Now by applying Modus Tollens on (1) and (2) : \\
+$\neg S \rightarrow \neg ( P \wedge  V)$ \\
+$P \wedge V$ \\
+\noindent\rule{1.9cm}{0.4pt}\\
+$\neg \neg S $ -5 \\
+\\
+(5) can also be written as : $S$
+
+\end{document}

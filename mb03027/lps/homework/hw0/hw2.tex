@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\title{CORE111 Logical Problem Solving\\Homework 1}
+\author{My Name}
+
+\begin{document}
+\maketitle
+
+\section{Elections}
+
+(a) $p\vee q$ : The election is decided or the votes have been counted.
+
+(b) $\neg p \wedge q$ : The elections are not decided and the votes have been counted.
+
+(c) $\neg q\vee (\neg p \wedge q)$ : The elections are not decided and the votes have been counted or the votes have not been counted.
+
+\section{Think and Drive}
+
+(a) $p \wedge \neg q$
+
+(b) $p \rightarrow q$
+
+(c) $\neg q \rightarrow \neg p$
+
+\section{Arguments}
+
+(a) The conclusion to this argument is that avoiding meat is not good for health. I came to this conclusion because Micheal is suffering from that disease. However the argument is invalid because their can be a situation when someone is vegetarian and he is very healthy
+
+(b) This argument means that if you want to win the powerball jackpot, you have to play the game. This argument was valid because for winning, playing is necessary. without playing no one can win a jackpot.
+
+\section{Formulas}
+
+Here is the truth table for $p\rightarrow q$.
+
+\begin{tabular}{|l|l|l|}
+  $p$ & $q$ & $p\rightarrow q$\\
+  \hline
+  F & F & T \\
+  F & T & T \\
+  T & F & F \\
+  T & T & T
+\end{tabular}
+\begin{tabular}{l|l|l|}
+  $\neg p$ & $\neg q$ & $p\leftrightarrow q$\\
+  \hline
+  T & T & T \\
+  T & F & F \\
+  F & T & F \\
+  F & F & T
+\end{tabular}
+\begin{tabular}{l|l|l|}
+ $p \wedge \neg q $ & $\big(\big( p \rightarrow q \big) \rightarrow p \big) \rightarrow p \big) $ & $ \neg q \rightarrow \neg p$\\
+  \hline
+  F & T & T \\
+  F & T & T \\
+  T & T & F \\
+  F & T & T
+\end{tabular}
+\begin{tabular}{l|}
+ $\big(p \rightarrow q \big) \rightarrow \big( \neg q \rightarrow \neg p \big) $\\
+  \hline
+  T \\
+  T \\
+  T \\
+  T 
+\end{tabular}
+
+
+\begin{tabular}{|l|}
+ $\big(p \wedge \big( p \rightarrow q \big) \big) \wedge \neg p$\\
+  \hline
+  F \\
+  F \\
+  F \\
+  F 
+\end{tabular}
+
+(a) neither
+
+(b) neither
+
+(c) tautology
+
+(d) tautology
+
+(e) Contradiction
+\end{document}
